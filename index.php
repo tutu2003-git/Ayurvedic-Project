@@ -10,11 +10,10 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 // Switch statement to handle different pages
 switch ($page) {
     case 'home':
-       include("home.php")
+       include("home.php");
         break;
     case 'about':
-        echo '<h1>About Page</h1>';
-        echo '<p>This is the About Page.</p>';
+        include("about.php");
         break;
     case 'contact':
         echo '<h1>Contact Page</h1>';
